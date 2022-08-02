@@ -4,22 +4,35 @@ body header #title {
   font-weight: 900;
   color: grey;
   margin-right: 2%;
-  margin-top: 2%;
+  margin-top: 1%;
 }
 body main {
   text-align: center;
   border: 4px solid black;
   background: rgb(217, 217, 217);
   padding: 2%;
-  margin: 2%;
+  margin: 1%;
 }
 body main #checkboxes {
-  margin: 2%;
+  margin: 1%;
+}
+body main #result {
+  text-align: center;
+  width: 300px;
+  height: 50px;
+}
+body main #copyResult {
+  width: 50px;
+  height: 20px;
+  font-size: 7px;
 }
 body main #gen_btn {
   width: 400px;
-  height: 200px;
-  padding: 1%;
+  height: 150px;
+  padding-bottom: 1%;
+}
+body main #gen_btn:hover {
+  cursor: pointer;
 }
 body footer {
   text-align: center;
