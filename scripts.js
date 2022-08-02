@@ -1,6 +1,10 @@
 function generate() {
     var amount = document.getElementById("amount").value;
 
+    if (amount == '') {
+        alert("Поле не может быть пустым!")
+    }
+
     if (document.getElementById("largeLetters").checked) {
         var ll = true;
     }
