@@ -101,7 +101,10 @@ def another(error):
 if __name__ == '__main__':
     app.run(debug=True)
 
+# TODO: Change icon of website (ASAP)
+# TODO: To see BD from Heroku (OPTIONAL)
+# TODO: Create button to git repository (React)
+# TODO: Clear history (React)
 # TODO: Empty choose should be changed (React)
 # TODO: Button to clear the field (React)
-# TODO: Heroku (Soon but not now)
 # TODO: Users in DB (In future)
