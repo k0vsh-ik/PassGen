@@ -34,7 +34,6 @@ def main():
 
         except:
             return 'An error while recording'
-            # TODO: alert (React)
 
     else:
         return render_template('markup.html', record='', status={'amount': 8, 'll': 'checked', 'sl': 'checked', 'numbers': 'checked', 'symbols': 'checked'})
@@ -67,7 +66,6 @@ def genPass(totArr, amount):
 
     if amount == '':
         return "Amount is empty!"
-        # TODO: alert "amount is empty" (React)
 
     for i in range(int(amount)):
         passwd += totArr[randint(0, len(totArr) - 1)]
@@ -101,10 +99,7 @@ def another(error):
 if __name__ == '__main__':
     app.run(debug=True)
 
-# TODO: Change icon of website (ASAP)
 # TODO: To see BD from Heroku (OPTIONAL)
 # TODO: Create button to git repository (React)
-# TODO: Clear history (React)
 # TODO: Empty choose should be changed (React)
-# TODO: Button to clear the field (React)
 # TODO: Users in DB (In future)
