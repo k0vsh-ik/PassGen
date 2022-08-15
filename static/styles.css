@@ -34,6 +34,10 @@ body form #gen_btn {
 body form #gen_btn:hover {
   cursor: pointer;
 }
+body #toThe {
+  color: blue;
+  font-weight: 900;
+}
 body footer {
   text-align: center;
 }

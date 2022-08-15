@@ -30,13 +30,15 @@ def main():
         try:
             db.session.add(record)
             db.session.commit()
-            return render_template('markup.html', record=record, status=status)
+            return render_template('main.html', record=record, status=status)
 
         except:
             return 'An error while recording'
 
     else:
-        return render_template('markup.html', record='', status={'amount': 8, 'll': 'checked', 'sl': 'checked', 'numbers': 'checked', 'symbols': 'checked'})
+        return render_template('main.html', record='',
+                               status={'amount': 8, 'll': 'checked', 'sl': 'checked', 'numbers': 'checked',
+                                       'symbols': 'checked'})
 
 
 def genArray():
@@ -89,6 +91,26 @@ def checker(amount):
         status['symbols'] = ''
 
     return status
+
+
+@app.route('/passwords')
+def showPasswords():
+    password = Passwords.query.order_by(Passwords.id.desc()).all()
+    return render_template('passwords.html', password=password)
+
+
+@app.route('/passwords/<int:id>/del')
+def delPassword(id):
+    password = Passwords.query.get_or_404(id)
+
+    try:
+        db.session.delete(password)
+        db.session.commit()
+
+        return redirect('/passwords')
+
+    except:
+        return 'Error!'
 
 
 @app.errorhandler(404)
