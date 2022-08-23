@@ -59,6 +59,16 @@ class App extends React.Component {
     }
 
     genBtn(amount, ll, sl, num, sym) {
+        if (ll == false && sl == false && num == false && sym == false) {
+            alert('You must choose at least one set of symbols')
+            return
+        }
+
+        if (amount > 10000 || amount < 1) {
+            alert('You must enter number from 1 to 10000')
+            return
+        }
+
         const data = {"amount": amount, "ll": ll, "sl": sl, "num": num, "sym": sym}      
 
         axios.post(baseUrl, data)
