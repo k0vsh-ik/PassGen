@@ -1,17 +1,25 @@
+body {
+  background-color: #333;
+}
 body header #title {
   text-align: right;
   font-size: 300%;
   font-weight: 900;
-  color: grey;
+  color: #2ba7c3;
   margin-right: 2%;
   margin-top: 1%;
 }
 body #form {
   text-align: center;
   border: 4px solid black;
-  background: rgb(217, 217, 217);
+  background: #222;
   padding: 2%;
   margin: 1%;
+  color: #2ba7c3;
+}
+body #form #amount {
+  background: #134b57;
+  color: #2ba7c3;
 }
 body #form #checkboxes {
   margin: 1%;
@@ -20,26 +28,34 @@ body #form #result {
   text-align: center;
   width: 300px;
   height: 50px;
+  background: #134b57;
+  color: #2ba7c3;
 }
 body #form .additionalButtons {
   width: 50px;
   height: 20px;
   font-size: 7px;
+  background: #134b57;
+  color: #2ba7c3;
+}
+body #form .additionalButtons:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 body #form #gen_btn {
   width: 400px;
   height: 150px;
   padding-bottom: 1%;
+  background: #134b57;
+  color: #2ba7c3;
 }
 body #form #gen_btn:hover {
   cursor: pointer;
-}
-body #toThe {
-  color: blue;
-  font-weight: 900;
+  opacity: 0.5;
 }
 body footer {
   text-align: center;
+  color: #2ba7c3;
 }
 body footer #foot1 {
   font-size: 80%;
